@@ -14,26 +14,11 @@
 }
 </style>
 
-
-<!-- BEGIN CODE COLLAPSE MENU -->
-<script language="JavaScript" type="text/javascript">
-
-if (document.getElementById) {
-document.writeln('<style type="text/css"><!--')
-document.writeln('.texter {display:none} @media print {.texter {display:block;}')
-document.writeln('//--></style>') }
-
-function openClose(theID) {
-if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
-else { document.getElementById(theID).style.display = "block" } }
-
-</script><style type="text/css"><!--
-.texter {display:none} @media print {.texter {display:block;}
-//--></style>
-
-<!-- END CODE COLLAPSE MENU -->
-
 <script>
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
 $(document).ready(function(){
 	var current_url = window.location.href;
 	
@@ -42,10 +27,27 @@ $(document).ready(function(){
 		var params = current_url.slice(current_url.indexOf("?")+1,current_url.length);
 		console.log("parameters:" + params);
 		console.log('help parameter detected, redirect user to the topic');
+		$("body").html("Loading the help topic, please wait...")
 		window.location.href = "/portal/help/main?"+params;
 	}
+	
+	
 });
+
+<!-- BEGIN CODE COLLAPSE MENU -->
+function openClose(theID) {
+	if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
+	else { document.getElementById(theID).style.display = "block" } 
+}
+<!-- END CODE COLLAPSE MENU -->
+
 </script>
+<style type="text/css"><!--
+.texter {display:none} @media print {.texter {display:block;}
+//--></style>
+
+
+
 </head>
 
 <body>
