@@ -7,6 +7,7 @@
 <title>Sakai Help Portal</title>
 <base target="_blank" />
 <link href="/library/skin/default/tool.css" rel="stylesheet" type="text/css" />
+<script src="/library/js/jquery.js"></script>
 <style type="text/css">
 .auto-style1 {
 	margin-left: 40px;
@@ -32,7 +33,18 @@ else { document.getElementById(theID).style.display = "block" } }
 
 <!-- END CODE COLLAPSE MENU -->
 
-
+<script>
+$(document).ready(function(){
+	var current_url = window.location.href;
+	console.log("URL:"+current_url);
+	// redirect user to sakai help page if help parameter is passed
+	if (current_url.match(/(\?|&)help=(.)/)) {        
+		var params = current_url.slice(current_url.indexOf("?")+1,current_url.length);
+		console.log('Sent is "yes"');
+		window.location.href = "/portal/help/main?"+params;
+	}
+});
+</script>
 </head>
 
 <body>
