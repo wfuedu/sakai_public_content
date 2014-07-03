@@ -36,11 +36,12 @@ else { document.getElementById(theID).style.display = "block" } }
 <script>
 $(document).ready(function(){
 	var current_url = window.location.href;
-	console.log("URL:"+current_url);
+	
 	// redirect user to sakai help page if help parameter is passed
 	if (current_url.match(/(\?|&)help=(.)/)) {        
 		var params = current_url.slice(current_url.indexOf("?")+1,current_url.length);
-		console.log('Sent is "yes"');
+		console.log("parameters:" + params);
+		console.log('help parameter detected, redirect user to the topic');
 		window.location.href = "/portal/help/main?"+params;
 	}
 });
