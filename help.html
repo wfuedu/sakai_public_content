@@ -7,7 +7,7 @@
 <title>Sakai Help Portal</title>
 <base target="_blank" />
 <link href="/library/skin/neo-wakeforest/tool.css" rel="stylesheet" type="text/css" />
-<link href="/library/skin/neo-wakeforest/protal.css" rel="stylesheet" type="text/css" />
+<link href="/library/skin/neo-wakeforest/portal.css" rel="stylesheet" type="text/css" />
 <script src="/library/js/jquery.js"></script>
 <style type="text/css">
 .auto-style1 {
@@ -46,15 +46,27 @@ $(document).ready(function(){
 	
 	// redirect user to sakai help page if help parameter is passed
 	if (current_url.match(/(\?|&)help=(.)/)) {        
-		var params = current_url.slice(current_url.indexOf("?")+1,current_url.length);
-		console.log("parameters:" + params);
-		console.log('help parameter detected, redirect user to the topic');
-		$("body").html("Loading the help topic, please wait...")
+		var params = getParameters(current_url);
+		displayLoadingMessage();
 		window.location.href = "/portal/help/main?"+params;
+	}else if(current_url.match(/(\?|&)topic=gradebook2/)){
+		displayLoadingMessage();
+		window.location.href = "https://docs.google.com/document/d/1l5AjzcwsYEIddz3hQwfahZAO0T3TevBe-kwt8Y1ON0k";
 	}
 	
 	
 });
+
+function getParameters(url){
+	var params = url.slice(url.indexOf("?")+1,url.length);
+	console.log("parameters:" + params);
+	console.log('help parameter detected, redirect user to the topic');
+	return params;
+}
+
+function displayLoadingMessage(){
+	$("body").html("Loading the help topic, please wait...")
+}
 
 <!-- BEGIN CODE COLLAPSE MENU -->
 function openClose(theID) {
