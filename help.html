@@ -43,15 +43,20 @@
 <script language="JavaScript" type="text/javascript">
 $(document).ready(function(){	
 	var current_url = window.location.href;
+	var topic_gradebook2 = "https://docs.google.com/document/d/1l5AjzcwsYEIddz3hQwfahZAO0T3TevBe-kwt8Y1ON0k";
 	
 	// redirect user to sakai help page if help parameter is passed
 	if (current_url.match(/(\?|&)help=(.)/)) {        
 		var params = getParameters(current_url);
 		displayLoadingMessage();
-		window.location.href = "/portal/help/main?"+params;
+		if(current_url.match(/sakai.gradebook.gwt.rpc/)){
+			window.location.href = topic_gradebook2;
+		}else{
+			window.location.href = "/portal/help/main?"+params;
+		}
 	}else if(current_url.match(/(\?|&)topic=gradebook2/)){
 		displayLoadingMessage();
-		window.location.href = "https://docs.google.com/document/d/1l5AjzcwsYEIddz3hQwfahZAO0T3TevBe-kwt8Y1ON0k";
+		window.location.href = topic_gradebook2;
 	}
 	
 	
