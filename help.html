@@ -1,21 +1,44 @@
-﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<head>
-<meta content="en-us" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Sakai Help Portal</title>
-<base target="_blank" />
-<link href="/library/skin/neo-wakeforest/tool.css" rel="stylesheet" type="text/css" />
-<link href="/library/skin/neo-wakeforest/portal.css" rel="stylesheet" type="text/css" />
-<script src="/library/js/jquery.js"></script>
-<style type="text/css">
+<html>
+  <head>
+    <meta http-equiv="Content-Style-Type" content="text/css" /> 
+    <title>help.html</title>
+    <link href="/library/skin/tool_base.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="/library/skin/neo-wakeforest/tool.css" type="text/css" rel="stylesheet" media="all" />
+    <script type="text/javascript" language="JavaScript" src="/library/js/headscripts.js"></script>
+    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body>
+
+<p>
+	<meta content="en-us" http-equiv="Content-Language" />
+</p>
+
+<p>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+</p>
+
+<p>
+	<title></title>
+</p>
+
+<p>
+	<base target="_blank" />
+</p>
+
+<p>
+	<link href="/library/skin/neo-wakeforest/tool.css" rel="stylesheet" type="text/css" />
+</p>
+
+<p>
+	<link href="/library/skin/neo-wakeforest/portal.css" rel="stylesheet" type="text/css" />
+	<script src="/library/js/jquery.js"></script>
+	<style type="text/css">
 .auto-style1 {
 	margin-left: 40px;
-}
-</style>
-
-<script>
+}	</style>
+	<script>
 //Avoid `console` errors in browsers that lack a console. e.g. IE
 (function() {
     var method;
@@ -28,19 +51,15 @@
     ];
     var length = methods.length;
     var console = (window.console = window.console || {});
-
     while (length--) {
         method = methods[length];
-
         // Only stub undefined methods.
         if (!console[method]) {
             console[method] = noop;
         }
     }
 }());
-</script>
-
-<script language="JavaScript" type="text/javascript">
+</script><script language="JavaScript" type="text/javascript">
 $(document).ready(function(){	
 	var current_url = window.location.href;
 	var topic_gradebook2 = "https://docs.google.com/document/d/1l5AjzcwsYEIddz3hQwfahZAO0T3TevBe-kwt8Y1ON0k";
@@ -64,204 +83,221 @@ $(document).ready(function(){
 	
 	
 });
-
 function getParameters(url){
 	var params = url.slice(url.indexOf("?")+1,url.length);
 	console.log("parameters:" + params);
 	console.log('help parameter detected, redirect user to the topic');
 	return params;
 }
-
 function displayLoadingMessage(){
 	$("body").html("Loading the help topic, please wait...")
 }
-
 <!-- BEGIN CODE COLLAPSE MENU -->
 function openClose(theID) {
 	if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
 	else { document.getElementById(theID).style.display = "block" } 
 }
 <!-- END CODE COLLAPSE MENU -->
-
 </script>
-<style type="text/css"><!--
+	<style type="text/css">
+<!--
 .texter {display:none} @media print {.texter {display:block;}
-//--></style>
-
-
-
-</head>
-
-<body>
-<img border="0" src="/library/skin/neo-wakeforest/images/logo_back.png">
+//-->	</style>
+</p>
+<p>
+	<img border="0" src="/library/skin/neo-wakeforest/images/logo_back.png" /></p>
 <hr />
-<h2>Sakai Help Portal 2.9</h2>
+<h2>
+	Sakai Help Portal 2.9</h2>
 <hr />
-<p>&nbsp;</p>
-
-
-
+<p>
+	&nbsp;</p>
 <!-- menu-identifier-a1:Student_Choices COLLAPSE MENU -->
 <div onclick="openClose('a1')" style="cursor: pointer;">
-<h2>&diams; Student Help</h2>
+	<h2>
+		&diams; Student Help (Click to expand)</h2>
 </div>
 <div class="texter" id="a1">
-<p>A <strong><a href="https://docs.google.com/document/d/1vO5XaS2su-vzsqycsvpH1SnBAhgvEkrxSBDb0TvehJY/edit?usp=sharing">Sakai 2.9 Quick Start Guide</a></strong> has been created to assist students in navigating the recent upgrade to our system. If this is your first time using Sakai, we suggest that you also refer to the collection of 
-<strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base articles</a></strong> on topics such as submitting assignments, taking quizzes, and communicating in discussion forums.
-</p>
-<p><strong><em><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Looking for your course in Sakai?</a></em></strong> <br />
-Check with the course instructor to verify he or she has set up a course site. Don't forget to check the<strong> "more" drop-down menu</strong> for additional sites.
-</p>
-<h3>Self Service</h3>
-<p class="auto-style1"><strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base</a></strong><br />
-Written Guides and Video Tutorials from the Sakai Team at Wake Forest University</p>
-<p class="auto-style1"><strong><a href="/portal/help/main">Sakai Glossary</a></strong><br />
-Searchable Help and List of Sakai Tools</p>
-<p class="auto-style1"><strong>
-<a href="http://help.wfu.edu/public/sakai/sakai-policies">Sakai Policies</a> </strong>and<strong>
-<a href="http://college.wfu.edu/itg/sakaiblog/faq/">Frequently Asked Questions</a></strong><br />
-WFU's Policies, Procedures, Timelines, and FAQs on the Sakai System</p>
-<h3>Support</h3>
-<p class="auto-style1"><strong><a href="http://zsr.wfu.edu/services/bridge/">The Bridge Service Desk</a></strong><br />
-Available by Phone at 336-758-HELP or Walk-In at the ZSR Library
-</p>
-<p class="auto-style1"><strong><a href="http://wakeforest.echelp.org/">Online Students - Master of Arts: Counseling and Human Services</a></strong><br />
-Help Desk for Online Students enrolled in Counseling or Human Services M.A.</p>
-<p class="auto-style1"><strong><a href="mailto:sbhelpdesk@wfu.edu">School of Business - Help Desk</a></strong><br />
-Email the SoB Help Desk (Graduate and Undergraduate Students)</p>
-<p>&nbsp;</p>
-<hr />
-<h2><em>Other Campus Technology Resources</em></h2>
-<h3>Collaborative Technologies</h3>
-<p class="auto-style1"><a href="http://voicethread.wfu.edu"><strong>VoiceThread</strong></a><br />
-Converse <span class="auto-style2">asynchronously</span> around a document or photo with voice and video</p>
-<p class="auto-style1"><a href="http://help.wfu.edu/webex"><strong>WebEx</strong></a><br />
-Converse synchronously and present virtually with voice and video</p>
-<h3>ZSR Library</h3>
-<p class="auto-style1"><a href="http://ask.zsr.wfu.edu/index.php"><strong>Ask a Librarian</strong></a><br />
-Got Questions? Get Answers. Text, Email, Call, Tweet, or Meet</p>
-<p class="auto-style1"><a href="http://zsr.wfu.edu/services/off-campus/"><strong>Off-Campus Library Access</strong></a><br />
-EZ Proxy and VPN are used to access library resources and videos while off of Wake Forest’s Campus</p>
-<p class="auto-style1"><a href="http://ask.zsr.wfu.edu/a.php?qid=200643"><strong>e-Reserves Access</strong></a><br />
-Digitized materials may be accessed on eReserves. Print or DVD reserves are available at the Circulation Desk on Reynolds 2.</p>
-<h3>Google Campus</h3>
-<p class="auto-style1"><a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/mail"><strong>WFU 
-Gmail</strong></a><br />
-Wake Forest University Email is Powered by Google Mail</p>
-<p class="auto-style1"><a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/training">
-<strong>Google Drive, Docs, and Apps</strong></a><br />
-Explore mail, calendar, contacts, Drive (including documents, spreadsheets, presentations, forms and drawings) and Sites</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1-kdbBgg5__30qs9OobgNifA9ETHL9pldx2EdCyWaNMk/edit?usp=sharing">Google Blogger</a></strong><br />
-Blogger is a blogging tool provided by Google. You can access Blogger with your WFU username and password. These accounts are considered a part of the WFU Google community. </p>
-<p>&nbsp;</p>
-<hr />
+	<p>
+		A <strong><a href="https://docs.google.com/document/d/1vO5XaS2su-vzsqycsvpH1SnBAhgvEkrxSBDb0TvehJY/edit?usp=sharing">Sakai 2.9 Quick Start Guide</a></strong> has been created to assist students in navigating the recent upgrade to our system. If this is your first time using Sakai, we suggest that you also refer to the collection of <strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base articles</a></strong> on topics such as submitting assignments, taking quizzes, and communicating in discussion forums.</p>
+	<p>
+		<strong><em><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Looking for your course in Sakai?</a></em></strong><br />
+		Check with the course instructor to verify he or she has set up a course site. Don&#39;t forget to check the<strong> &quot;more&quot; drop-down menu</strong> for additional sites.</p>
+	<h3>
+		Self Service</h3>
+	<p class="auto-style1">
+		<strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base</a></strong><br />
+		Written Guides and Video Tutorials from the Sakai Team at Wake Forest University</p>
+	<p class="auto-style1">
+		<strong><a href="/portal/help/main">Sakai Glossary</a></strong><br />
+		Searchable Help and List of Sakai Tools</p>
+	<p class="auto-style1">
+		<strong><a href="http://help.wfu.edu/public/sakai/sakai-policies">Sakai Policies</a> </strong>and<strong> <a href="http://college.wfu.edu/itg/sakaiblog/faq/">Frequently Asked Questions</a></strong><br />
+		WFU&#39;s Policies, Procedures, Timelines, and FAQs on the Sakai System</p>
+	<h3>
+		Support</h3>
+	<p class="auto-style1">
+		<strong><a href="http://zsr.wfu.edu/services/bridge/">The Bridge Service Desk</a></strong><br />
+		Available by Phone at 336-758-HELP or Walk-In at the ZSR Library</p>
+	<p class="auto-style1">
+		<strong><a href="http://wakeforest.echelp.org/">College Summer School Online Help Desk</a></strong><br />
+		24/7 Help Desk for College students taking fully online courses in the summer.</p>
+	<p class="auto-style1">
+		<strong><a href="http://wakeforest.echelp.org/">Online Students - Master of Arts: Counseling and Human Services</a></strong><br />
+		Help Desk for Online Students enrolled in Counseling or Human Services M.A.</p>
+	<p class="auto-style1">
+		<strong><a href="mailto:sbhelpdesk@wfu.edu">School of Business - Help Desk</a></strong><br />
+		Email the SoB Help Desk (Graduate and Undergraduate Students)</p>
+	<p>
+		&nbsp;</p>
+	<hr />
+	<h2>
+		<em>Other Campus Technology Resources</em></h2>
+	<h3>
+		Collaborative Technologies</h3>
+	<p class="auto-style1">
+		<a href="http://voicethread.wfu.edu"><strong>VoiceThread</strong></a><br />
+		Converse <span class="auto-style2">asynchronously</span> around a document or photo with voice and video</p>
+	<p class="auto-style1">
+		<a href="http://help.wfu.edu/webex"><strong>WebEx</strong></a><br />
+		Converse synchronously and present virtually with voice and video</p>
+	<h3>
+		ZSR Library</h3>
+	<p class="auto-style1">
+		<a href="http://ask.zsr.wfu.edu/index.php"><strong>Ask a Librarian</strong></a><br />
+		Got Questions? Get Answers. Text, Email, Call, Tweet, or Meet</p>
+	<p class="auto-style1">
+		<a href="http://zsr.wfu.edu/services/off-campus/"><strong>Off-Campus Library Access</strong></a><br />
+		EZ Proxy and VPN are used to access library resources and videos while off of Wake Forest&rsquo;s Campus</p>
+	<p class="auto-style1">
+		<a href="http://ask.zsr.wfu.edu/a.php?qid=200643"><strong>e-Reserves Access</strong></a><br />
+		Digitized materials may be accessed on eReserves. Print or DVD reserves are available at the Circulation Desk on Reynolds 2.</p>
+	<h3>
+		Google Campus</h3>
+	<p class="auto-style1">
+		<a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/mail"><strong>WFU Gmail</strong></a><br />
+		Wake Forest University Email is Powered by Google Mail</p>
+	<p class="auto-style1">
+		<a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/training"><strong>Google Drive, Docs, and Apps</strong></a><br />
+		Explore mail, calendar, contacts, Drive (including documents, spreadsheets, presentations, forms and drawings) and Sites</p>
+	<p class="auto-style1">
+		<strong><a href="https://docs.google.com/document/d/1-kdbBgg5__30qs9OobgNifA9ETHL9pldx2EdCyWaNMk/edit?usp=sharing">Google Blogger</a></strong><br />
+		Blogger is a blogging tool provided by Google. You can access Blogger with your WFU username and password. These accounts are considered a part of the WFU Google community.</p>
+	<p>
+		&nbsp;</p>
+	<hr />
 </div>
-<!-- END CODE COLLAPSE MENU -->
-
-
-<!-- menu-identifier-a2:Faculty_Choices COLLAPSE MENU -->
+<!-- END CODE COLLAPSE MENU --><!-- menu-identifier-a2:Faculty_Choices COLLAPSE MENU -->
 <div onclick="openClose('a2')" style="cursor: pointer;">
-<h2>♦ Faculty Help</h2>
+	<h2>
+		&diams; Faculty Help (Click to expand)</h2>
 </div>
 <div class="texter" id="a2">
-<p>A <strong><a href="https://docs.google.com/document/d/1EpozWAnmYCImhi_Epx_MstCUoxRE320Jb6i5Ml5BgKk/edit?usp=sharing">Faculty Quick Start Guide</a></strong> has been created to assist you 
-in preparing for the upcoming term as you navigate the recent upgrade to Sakai 
-2.9.
-</p>
-<h3>Self Service</h3>
-<p class="auto-style1"><strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base</a></strong><br />
-Written Guides and Video Tutorials from the Sakai Team at Wake Forest University</p>
-<p class="auto-style1"><strong><a href="/portal/help/main">Sakai Glossary</a></strong><br />
-Searchable Help and List of Sakai Tools</p>
-<p class="auto-style1"><strong>
-<a href="http://help.wfu.edu/public/sakai/sakai-policies">Sakai Policies</a> </strong>and<strong>
-<a href="http://college.wfu.edu/itg/sakaiblog/faq/">Frequently Asked Questions</a></strong><br />
-WFU's Policies, Procedures, Timelines, and FAQs on the Sakai System</p>
-<h3>Support</h3>
-<p class="auto-style1"><strong><a href="http://zsr.wfu.edu/services/bridge/">The Bridge Service Desk</a></strong><br />
-Available by Phone at 336-758-HELP or Walk-In at the ZSR Library
-</p>
-<p class="auto-style1">
-<a href="http://college.wfu.edu/itg/frequently-asked-questions/itg-by-department/">
-<strong>Instructional Technology Group</strong></a><br />
-Browse a list of ITGs by academic department</p>
-<p class="auto-style1"><strong><a href="http://wakeforest.echelp.org/">Online Master of Arts: Counseling and Human Services</a></strong><br />
-Help Desk for the Online Counseling or Human Services M.A.</p>
-<p class="auto-style1"><strong><a href="mailto:sbhelpdesk@wfu.edu">School of Business - 
-Faculty IT Request</a></strong><br />
-Email the School of Business Help Desk </p>
-<h3>Workshops</h3>
-<p class="auto-style1"><a href="http://pdc.wfu.edu/?q=sakai"><strong>PDC Website</strong></a><br />
-Browse the PDC website for upcoming Sakai workshops</p>
-<p class="auto-style1">
-<a href="https://docs.google.com/a/wfu.edu/spreadsheet/viewform?formkey=dFZZckFzRG5acVJWZ2I2ckh5Mkh4bnc6MQ">
-<strong>Sakai Training Request Form</strong></a><br />
-If minimum enrollment has not been met for a specific workshop, 
-the Sakai Team will contact you to schedule a one-on-one session</p>
-<p>&nbsp;</p>
-<hr />
-<h2><em>Other Campus Technology Resources</em></h2>
-<h3>Collaborative Technologies</h3>
-<p class="auto-style1"><a href="http://voicethread.wfu.edu"><strong>VoiceThread</strong></a><br />
-Converse <span class="auto-style2">asynchronously</span> around a document or photo with voice and video</p>
-<p class="auto-style1"><a href="http://help.wfu.edu/webex"><strong>WebEx</strong></a><br />
-Converse synchronously and present virtually with voice and video</p>
-<h3>ZSR Library</h3>
-<p class="auto-style1"><a href="http://ask.zsr.wfu.edu/index.php"><strong>Ask a Librarian</strong></a><br />
-Got Questions? Get Answers. Text, Email, Call, Tweet, or Meet</p>
-<p class="auto-style1"><a href="http://zsr.wfu.edu/services/off-campus/"><strong>Off-Campus Library Access</strong></a><br />
-EZ Proxy and VPN are used to access library resources and videos while off of Wake Forest’s Campus</p>
-<p class="auto-style1"><a href="http://ask.zsr.wfu.edu/a.php?qid=200643"><strong>e-Reserves Access</strong></a><br />
-Digitized materials may be accessed on eReserves. Print or DVD reserves are available at the Circulation Desk on Reynolds 2.</p>
-<h3>Google Campus</h3>
-<p class="auto-style1"><a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/mail"><strong>WFU 
-Gmail</strong></a><br />
-Wake Forest University Email is Powered by Google Mail</p>
-<p class="auto-style1"><a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/training">
-<strong>Google Drive, Docs, and Apps</strong></a><br />
-Explore mail, calendar, contacts, Drive (including documents, spreadsheets, presentations, forms and drawings) and Sites</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1-kdbBgg5__30qs9OobgNifA9ETHL9pldx2EdCyWaNMk/edit?usp=sharing">Google Blogger</a></strong><br />
-Blogger is a blogging tool provided by Google. You can access Blogger with your WFU username and password. These accounts are considered a part of the WFU Google community. </p>
-<p>&nbsp;</p>
-<hr />
-
+	<p>
+		A <strong><a href="https://docs.google.com/document/d/1EpozWAnmYCImhi_Epx_MstCUoxRE320Jb6i5Ml5BgKk/edit?usp=sharing">Faculty Quick Start Guide</a></strong> has been created to assist you in preparing for the upcoming term as you navigate the recent upgrade to Sakai 2.9.</p>
+	<h3>
+		Self Service</h3>
+	<p class="auto-style1">
+		<strong><a href="http://help.wfu.edu/public/sakai">Knowledge Base</a></strong><br />
+		Written Guides and Video Tutorials from the Sakai Team at Wake Forest University</p>
+	<p class="auto-style1">
+		<strong><a href="/portal/help/main">Sakai Glossary</a></strong><br />
+		Searchable Help and List of Sakai Tools</p>
+	<p class="auto-style1">
+		<strong><a href="http://help.wfu.edu/public/sakai/sakai-policies">Sakai Policies</a> </strong>and<strong> <a href="http://college.wfu.edu/itg/sakaiblog/faq/">Frequently Asked Questions</a></strong><br />
+		WFU&#39;s Policies, Procedures, Timelines, and FAQs on the Sakai System</p>
+	<h3>
+		Support</h3>
+	<p class="auto-style1">
+		<strong><a href="http://zsr.wfu.edu/services/bridge/">The Bridge Service Desk</a></strong><br />
+		Available by Phone at 336-758-HELP or Walk-In at the ZSR Library</p>
+	<p class="auto-style1">
+		<a href="http://college.wfu.edu/itg/frequently-asked-questions/itg-by-department/"><strong>Instructional Technology Group</strong></a><br />
+		Browse a list of ITGs by academic department</p>
+	<p class="auto-style1">
+		<strong><a href="http://wakeforest.echelp.org/">Online Master of Arts: Counseling and Human Services</a></strong><br />
+		Help Desk for the Online Counseling or Human Services M.A.</p>
+	<p class="auto-style1">
+		<strong><a href="mailto:sbhelpdesk@wfu.edu">School of Business - Faculty IT Request</a></strong><br />
+		Email the School of Business Help Desk</p>
+	<h3>
+		Workshops</h3>
+	<p class="auto-style1">
+		<a href="http://pdc.wfu.edu/?q=sakai"><strong>PDC Website</strong></a><br />
+		Browse the PDC website for upcoming Sakai workshops</p>
+	<p class="auto-style1">
+		<a href="https://docs.google.com/a/wfu.edu/spreadsheet/viewform?formkey=dFZZckFzRG5acVJWZ2I2ckh5Mkh4bnc6MQ"><strong>Sakai Training Request Form</strong></a><br />
+		If minimum enrollment has not been met for a specific workshop, the Sakai Team will contact you to schedule a one-on-one session</p>
+	<p>
+		&nbsp;</p>
+	<hr />
+	<h2>
+		<em>Other Campus Technology Resources</em></h2>
+	<h3>
+		Collaborative Technologies</h3>
+	<p class="auto-style1">
+		<a href="http://voicethread.wfu.edu"><strong>VoiceThread</strong></a><br />
+		Converse <span class="auto-style2">asynchronously</span> around a document or photo with voice and video</p>
+	<p class="auto-style1">
+		<a href="http://help.wfu.edu/webex"><strong>WebEx</strong></a><br />
+		Converse synchronously and present virtually with voice and video</p>
+	<h3>
+		ZSR Library</h3>
+	<p class="auto-style1">
+		<a href="http://ask.zsr.wfu.edu/index.php"><strong>Ask a Librarian</strong></a><br />
+		Got Questions? Get Answers. Text, Email, Call, Tweet, or Meet</p>
+	<p class="auto-style1">
+		<a href="http://zsr.wfu.edu/services/off-campus/"><strong>Off-Campus Library Access</strong></a><br />
+		EZ Proxy and VPN are used to access library resources and videos while off of Wake Forest&rsquo;s Campus</p>
+	<p class="auto-style1">
+		<a href="http://ask.zsr.wfu.edu/a.php?qid=200643"><strong>e-Reserves Access</strong></a><br />
+		Digitized materials may be accessed on eReserves. Print or DVD reserves are available at the Circulation Desk on Reynolds 2.</p>
+	<h3>
+		Google Campus</h3>
+	<p class="auto-style1">
+		<a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/mail"><strong>WFU Gmail</strong></a><br />
+		Wake Forest University Email is Powered by Google Mail</p>
+	<p class="auto-style1">
+		<a href="https://sites.google.com/a/wfu.edu/wfu-google-apps/training"><strong>Google Drive, Docs, and Apps</strong></a><br />
+		Explore mail, calendar, contacts, Drive (including documents, spreadsheets, presentations, forms and drawings) and Sites</p>
+	<p class="auto-style1">
+		<strong><a href="https://docs.google.com/document/d/1-kdbBgg5__30qs9OobgNifA9ETHL9pldx2EdCyWaNMk/edit?usp=sharing">Google Blogger</a></strong><br />
+		Blogger is a blogging tool provided by Google. You can access Blogger with your WFU username and password. These accounts are considered a part of the WFU Google community.</p>
+	<p>
+		&nbsp;</p>
+	<hr />
 </div>
 <!-- END CODE COLLAPSE MENU -->
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h2>
+	<em>Popular Topics</em></h2>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/13o56uergKke1C9jZhzES39a3D8IA9xMx7fd7vtyNAhE/edit?usp=sharing">Secure / Non Secure (Blocked) Content and Videos</a></strong><br />
+	Each of the most popular Browsers (Firefox, IE, Chrome) displays content differently. Click the link above to learn how to display content in Sakai which may have been blocked by your browser.</p>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Missing a Course? (More&hellip; drop-down menu)</a></strong><br />
+	Sakai displays the most recent courses you have visited. If you are expecting to see a course in your top menu bar, click the More&hellip; drop-down menu to see courses there isn&rsquo;t room to display on your screen. If you are a student, check with your instructor that they have created a course site.</p>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/1H2iYNXfn2ygcRLlm8XCQ6drxs0HW_CH_tmlMKZPu2hU/edit?usp=sharing">Sakai 2.9 Collapsible Menu (Left Menu)</a></strong><br />
+	Sakai 2.9 provides a collapsible left menu to increase your usable screen space. When collapsed, the menu displays as a series of icons. When expanded, the full menu displays.</p>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/1DQVXjg_VE69QuSg68ghOgM69xzUXwQ8uPz1lyya14iI/edit?usp=sharing">Sakai 2.9 IM Chat</a></strong><br />
+	Sakai 2.9 now includes an Instant Message Chat feature. This document will explain how to find students and instructors when they are online.</p>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Hide Old Course Sites</a> </strong><br />
+	After using Sakai for several semesters, you may find that you have too many tabs displaying for course sites. This document will explain how to hide old course sites that you may not need to access on a regular basis.</p>
+<p class="auto-style1">
+	<strong><a href="https://docs.google.com/document/d/1iAWmEmYpxWyWiQdrFnxgVBA27lAr9uCawdKyU2glGOo/edit?usp=sharing">Assign TA to Course Site</a> </strong><br />
+	Teaching Assistants should be assigned the Teaching Assistant role within the course site. Assigning TAs as Instructors may be a FERPA violation. Adding a TA to a section they are not working with may also be a FERPA violation. &nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2><em>Popular Topics</em></h2>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/13o56uergKke1C9jZhzES39a3D8IA9xMx7fd7vtyNAhE/edit?usp=sharing">Secure / Non Secure (Blocked) Content and Videos</a></strong><br />
-Each of the most popular Browsers (Firefox, IE, Chrome) displays content differently. Click the link above to learn how to display content in Sakai which may have been blocked by your browser.  
-</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Missing a Course? (More… drop-down menu)</a></strong>
-<br />
-Sakai displays the most recent courses you have visited. If you are expecting to see a course in your top menu bar, click the More… drop-down menu to see courses there isn’t room to display on your screen. If you are a student, check with your instructor that they have created a course site. 
-</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1H2iYNXfn2ygcRLlm8XCQ6drxs0HW_CH_tmlMKZPu2hU/edit?usp=sharing">Sakai 2.9 Collapsible Menu (Left Menu)</a></strong>
-<br />
-Sakai 2.9 provides a collapsible left menu to increase your usable screen space. When collapsed, the menu displays as a series of icons. When expanded, the full menu displays. 
-</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1DQVXjg_VE69QuSg68ghOgM69xzUXwQ8uPz1lyya14iI/edit?usp=sharing">Sakai 2.9 IM Chat</a></strong><br />
-Sakai 2.9 now includes an Instant Message Chat feature. This document will 
-explain how to find students and instructors when they are online.</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1ZBTYabJvSGeFVVPPi9nbszavRtRgam65MusyXqSorJs/edit?usp=sharing">Hide Old Course Sites</a> </strong>
-<br />
-After using Sakai for several semesters, you may find that you have too many tabs displaying for course sites. This document will explain how to hide old course sites that you may not need to access on a regular basis. 
-</p>
-<p class="auto-style1"><strong><a href="https://docs.google.com/document/d/1iAWmEmYpxWyWiQdrFnxgVBA27lAr9uCawdKyU2glGOo/edit?usp=sharing">Assign TA to  Course Site</a> </strong>
-<br />
-Teaching Assistants should be assigned the Teaching Assistant role within the course site. Assigning TAs as Instructors may be a FERPA violation. Adding a TA to a section they are not working with may also be a FERPA violation. 
-&nbsp;</p>
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-
-
-</body>
-
+  </body>
 </html>
